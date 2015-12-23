@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+	<!-- load resource bundle for this page only 
+	<f:loadBundle basename="com.mkyong.messages" var="msg"/>
+	-->
+	
+    <h:body>
+    	<h:outputText value="#{msg['welcome']}" />
+    	<ol>
+    	
+    	<h:form>
+			<h:commandButton action="#{language.changeLanguage('es')}"
+				value="Español"/>
+			<h:outputText value="&#160;" />
+			<h:commandButton action="#{language.changeLanguage('en')}"
+				value="English" />
+			<h:commandButton action="#{language.changeLanguage('fr')}"
+				value="Frances" />
+		</h:form>
+			
+	    <li><h:outputText value="#{msg['login.1']}" /></li>
+	    
+	 	<table border="2px"> <!-- Lo cambiaremos por CSS -->
+           <tr>
+              <td>id</td>
+              <td>#{msg['year']}</td>
+              <td>#{msg['colors']}</td>
+              <td>#{msg['date']}</td>
+              <td>#{msg['address']}</td>
+              <td>#{msg['name']}</td>
+              <td>#{msg['surname']}</td>
+              <td>#{msg['message']}</td>
+              <td>#{msg['ear']}</td>
+              <td>#{msg['flag']}</td>
+              <td>#{msg['house']}</td>
+              <td>#{msg['kind']}</td>
+              <td>#{msg['night']}</td>
+              <td>#{msg['people']}</td>
+              <td>#{msg['question']}</td>
+              <td>#{msg['red']}</td>
+              <td>#{msg['sure']}</td>
+              <td>#{msg['yes']}</td>
+              <td>#{msg['how']}</td>
+              <td>#{msg['no']}</td>
+              <td>#{msg['dog']}</td>
+              <td>#{msg['apple']}</td>
+              <td>#{msg['boy']}</td>
+			  <td>#{msg['car']}</td>
+          </tr>
+          <tr>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>12345678</td>
+          </tr>
+        </table>
+    	</ol>
+	</h:body>
+</html>
