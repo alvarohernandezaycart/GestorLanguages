@@ -1,0 +1,3 @@
+[submodule "src/main/resources/com/translates"]
+	path = src/main/resources/com/translates
+	url = https://github.com/alvarohernandezaycart/TraduccionesAura.git
