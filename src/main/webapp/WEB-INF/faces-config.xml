@@ -14,7 +14,7 @@
 		</locale-config>
 		
 		<resource-bundle>
-			<base-name>com.mkyong.Archivo</base-name>
+			<base-name>com.translates.messages</base-name>
 			<var>msg</var>
 		</resource-bundle>
 	</application>

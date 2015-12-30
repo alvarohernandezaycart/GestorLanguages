@@ -1,16 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-  http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.codinko.cache</groupId>
-	<artifactId>JavaServerFaces</artifactId>
-	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>JavaServerFaces Maven Webapp</name>
-	<url>http://maven.apache.org</url>
-
-	<properties>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gestor.cache</groupId>
+  <artifactId>Languages</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Languages Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
 		<ehcache.version>2.4.2</ehcache.version>
 	</properties>
 
@@ -23,7 +20,7 @@
 	  	</dependency>
 	  	<dependency>
 	  		<groupId>com.sun.faces</groupId>
-	  		<artifact  Id>mojarra-jsf-impl</artifactId>
+	  		<artifactId>mojarra-jsf-impl</artifactId>
 	  		<version>2.0.0-b04</version>
 	  	</dependency>
 	  	<dependency>
@@ -124,6 +121,54 @@
 			<version>4.2.3.RELEASE</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>4.1.1.201511131810-r</version>
+		</dependency>
+		
+		 <dependency>
+	        <groupId>org.slf4j</groupId>
+	        <artifactId>slf4j-api</artifactId>
+	        <version>1.7.5</version>
+	    </dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.google.gdata</groupId>
+			<artifactId>core</artifactId>
+			<version>1.47.1</version>
+		</dependency>
+		<dependency>
+	        <groupId>com.google.http-client</groupId>
+	        <artifactId>google-http-client-jackson2</artifactId>
+	        <version>1.17.0-rc</version>
+	    </dependency>
+	    <dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-drive</artifactId>
+			<version>v3-rev2-1.21.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-analytics</artifactId>
+			<version>v3-rev122-1.21.0</version>
+		</dependency>
+
+	    
+		
 	</dependencies>
 
 	<repositories>
@@ -135,9 +180,26 @@
 	</repositories>
 
 	<build>
-		<finalName>JavaServerFaces</finalName>
+		<finalName>Languages</finalName>
 
-		<plugins>
+	<plugins>
+		<plugin>  
+		   <groupId>org.codehaus.mojo</groupId>  
+		   <artifactId>exec-maven-plugin</artifactId>  
+		   <version>1.1.1</version>  
+		     <executions>  
+		      <execution>  
+		      <phase>test</phase>  
+		       <goals>  
+		        <goal>java</goal>  
+		       </goals>  
+		       <configuration>  
+		        <mainClass>com.gestores.languages.GestorLanguages</mainClass>  
+		       </configuration>  
+		      </execution>  
+		     </executions>  
+		    </plugin>  
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
